@@ -62,7 +62,7 @@ const labels = [
     labelTextColor: '#000',
   
     options: {
-      
+      responsive: true,
       scales: {
        y:{
         ticks: {
