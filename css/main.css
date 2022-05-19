@@ -450,7 +450,7 @@ left: -10px;
 
 @media(max-width: 768px){
   .gradebook-box .material ul li {
-  font-size: 14px;
+  font-size: 10px;
 }
 }
 .gradebook-box ul li:last-child{
@@ -481,7 +481,7 @@ left: -10px;
   .gradebook-box .s2-semester ul li,
   .gradebook-box .year-pass-limit ul li,
   .gradebook-box .total-mark ul li {
-  font-size: 14px;
+  font-size: 10px;
 }
 }
 .total-mark-footer{
