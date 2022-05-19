@@ -1,0 +1,509 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap');
+:root {}
+
+body {}
+
+ul,
+li {
+  list-style: none;
+}
+
+p {
+  margin: 0;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+header {
+  padding: 15px 0;
+  background-color: #eeeeee38;
+  border-bottom: 2px solid #ddd;
+}
+
+.home-header {
+  display: flex;
+  justify-content: space-between;
+}
+@media(max-width: 768px){
+  .home-header{
+    justify-content: space-around;
+  }
+}
+.settings-profile {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.settings-profile .notif {
+  position: relative;
+  cursor: pointer;
+}
+
+.settings-profile .notif::after {
+  position: absolute;
+  content: "";
+  width: 12px;
+  height: 12px;
+  right: 3px;
+  border-radius: 50%;
+  background-color: #ff3030;
+  top: 8px;
+  border: 2px solid #fff;
+}
+
+.settings-profile .user-icon {
+  cursor: pointer;
+  position: relative;
+}
+
+.settings-profile i {
+  color: #0568a9;
+}
+
+.settings-profile>div {
+  width: 35px;
+  height: 35px;
+  border: 1px solid #e9f0f6;
+  text-align: center !important;
+  display: block;
+  line-height: 35px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.settings-profile>div>ul {
+  position: absolute;
+  width: 150px;
+  background-color: #ffff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 5px;
+  transition: all 0.2s ease;
+  top: 80px;
+  visibility: hidden;
+  padding: 0;
+}
+
+.settings-profile>div>ul li {
+  width: 100%;
+}
+
+.settings-profile>div>ul.open {
+  top: 40px;
+  visibility: visible;
+}
+
+.settings-profile .notif .all-notif {
+  right: 10px;
+}
+
+.settings-profile .all-setting-menu {
+  right: -10px;
+}
+
+.home-header .logo {
+  width: 80px;
+  height: 80px;
+}
+
+.home-header .logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.user-icon:after {
+  content: "\f078";
+  position: absolute;
+  left: 45px;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: #b5b1b1;
+}
+
+/* Start Childes Section */
+.childes {
+  border-bottom: 2px solid #ddd;
+}
+
+.child-profile {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0;
+}
+@media(max-width: 768px){
+  .child-profile {
+    flex-direction: column;
+  }
+}
+.child-profile .child-img {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.child-profile .child-img p {
+  font-weight: 600;
+}
+
+.child-profile .child-img img {
+  width: 150px;
+  height: 150px;
+  border-radius: 15px;
+}
+
+.child-profile .list-child {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  position: relative;
+}
+
+.child-profile .list-child .box {
+  display: flex;
+  align-items: center;
+  width: 150px;
+  border: 1px solid #ddd;
+  height: 50px;
+  gap: 10px;
+  border-radius: 10px;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+.child-profile .list-child .box p {
+  font-weight: 400;
+  color: #000;
+}
+
+.child-profile .list-child .box.active {
+  background-color: #dcebf5;
+}
+
+.child-profile .list-child .box.active p {
+  color: #0b4c77;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.child-profile .list-child .box img {
+  width: 60px;
+  height: 100%;
+  border-radius: 15px;
+}
+
+.child-profile .list-child .btns-add-child button {
+  border: 1px solid #1493e6;
+  background-color: transparent;
+  color: #0a6aa9;
+  height: 40px;
+  border-radius: 5px;
+}
+@media(max-width: 992px){
+  .child-profile .list-child .btns-add-child {
+    position: absolute;
+    bottom: -45px;
+    right: 0;
+  }
+}
+.settings-profile>div>ul li:hover {
+  background-color: #f2f2f2;
+}
+
+.statistics {
+  padding: 50px 0;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.head-section {
+  font-weight: 700;
+  margin: 0;
+  position: relative;
+font-size: 18px;}
+
+.head-section:before {
+  content: "";
+  position: absolute;
+  background-color: #ba6121;
+  width: 8px;
+  height: 100%;
+  left: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 20px;
+}
+@media(max-width: 768px){
+  .head-section:before{
+left: -10px;
+  }
+}
+
+.items-status {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 50px 0;
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  margin: 20px 0;
+}
+@media(max-width:768px){
+  .items-status{
+    flex-direction: column;
+  }
+}
+.items-status .box {
+  text-align: center;
+}
+@media(max-width:768px){
+  .items-status .box{
+   margin: 20px 0;
+  }
+}
+.items-status .box p:first-of-type {
+  margin: 0;
+  font-weight: 700;
+}
+
+.items-status .box p:last-of-type {
+  font-weight: 500;
+}
+
+.items-status .box .status {
+  font-weight: 600;
+}
+
+
+
+
+/* Homework Section */
+.homework {
+  padding: 50px 0;
+}
+
+.homework .top-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.homework .top-section a {
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 14px;
+  color: #114985;
+  font-weight: 600;
+}
+
+.homework .box {
+  border: 1px solid #ddd;
+  border-radius: 25px;
+}
+
+
+
+
+
+
+
+
+@property --p {
+  syntax: '<number>';
+  inherits: true;
+  initial-value: 0;
+}
+
+.pie {
+  --p: 20;
+  --b: 22px;
+  --c: darkred;
+  --w: 150px;
+
+  width: var(--w);
+  aspect-ratio: 1;
+  position: relative;
+  display: inline-grid;
+  margin: 5px;
+  place-content: center;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+.pie:before,
+.pie:after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+}
+
+.pie:before {
+  inset: 0;
+  background:
+    radial-gradient(farthest-side, var(--c) 98%, #0000) top/var(--b) var(--b) no-repeat,
+    conic-gradient(var(--c) calc(var(--p)*1%), #0000 0);
+  -webkit-mask: radial-gradient(farthest-side, #0000 calc(99% - var(--b)), #000 calc(100% - var(--b)));
+  mask: radial-gradient(farthest-side, #0000 calc(99% - var(--b)), #000 calc(100% - var(--b)));
+}
+
+.pie:after {
+  inset: calc(50% - var(--b)/2);
+  background: var(--c);
+  transform: rotate(calc(var(--p)*3.6deg)) translateY(calc(50% - var(--w)/2));
+  content: "";
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border: 3px solid;
+  background-color: #fff;
+  top: -23px;
+  left: 12px;
+}
+.items-status .box:nth-of-type(1) .pie:after {
+  border-color: #420b8a;
+}
+
+.items-status .box:nth-of-type(2) .pie:after {
+  top: -13px;
+  border-color: #bfe813;
+}
+.items-status .box:nth-of-type(3) .pie:after {
+  border-color: #ab13e8;
+}
+.animate {
+  animation: p 1s .5s both;
+}
+
+.no-round:before {
+  background-size: 0 0, auto;
+}
+
+.no-round:after {
+  content: none;
+}
+
+@keyframes p {
+  from {
+    --p: 0
+  }
+}
+
+
+
+
+/* GradeWork */
+.gradebook,
+.calender{
+  padding: 50px 0 20px;
+}
+
+.gradebook .header-greadebook {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.gradebook .header-greadebook h2{
+  flex: 1.40;
+}
+
+.gradebook .header-greadebook p{
+  flex: 1;
+}
+@media(max-width: 768px){
+  .gradebook .header-greadebook p{
+    font-size: 10px;
+  }
+}
+.gradebook-box{
+  display: flex;
+  justify-content: space-between;
+  margin:10px 0 5px;
+}
+.gradebook-box ul{
+  padding: 20px;
+}
+@media(max-width: 768px){
+  .gradebook-box ul{
+    padding: 6px;
+  }
+}
+.gradebook-box ul li{
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.gradebook-box .material{
+  border: 1px solid #ddd;
+  flex: 1;
+  border-radius: 10px;
+}
+.gradebook-box .material ul li{
+  font-weight: bold;
+  font-size: 18px;
+}
+
+@media(max-width: 768px){
+  .gradebook-box .material ul li {
+  font-size: 14px;
+}
+}
+.gradebook-box ul li:last-child{
+  border: 0;
+}
+.gradebook-box .s1-semester,
+.gradebook-box .s2-semester,
+.gradebook-box .year-pass-limit,
+.gradebook-box .total-mark
+
+{
+  flex: 1;
+  border: 1px solid #ddd;
+  margin: 0 2px;
+  border-radius: 10px;
+}
+.gradebook-box .s1-semester ul li,
+.gradebook-box .s2-semester ul li,
+.gradebook-box .year-pass-limit ul li,
+.gradebook-box .total-mark ul li
+{
+  font-weight: 400;
+  font-size: 18px;
+}
+
+@media(max-width: 768px){
+  .gradebook-box .s1-semester ul li,
+  .gradebook-box .s2-semester ul li,
+  .gradebook-box .year-pass-limit ul li,
+  .gradebook-box .total-mark ul li {
+  font-size: 14px;
+}
+}
+.total-mark-footer{
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #E9E9E9;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.total-mark-footer p.total{
+  font-weight: bold;
+  font-size: 16px;
+}
+.total-mark-footer .total-mark-number{
+  font-weight: 600;
+  font-size: 16px;
+}
+.total-mark-footer .total-mark-number span{
+  color: #ddd;
+}
+.table-borderless tbody+tbody, .table-borderless td, .table-borderless th, .table-borderless thead th{
+  width: 145.3px !important;
+  height: 57px !important;
+}
+
+
+
